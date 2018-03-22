@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.leihui.fldemos.BottomBarLayout.BottomBarActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.chaychan.library.BottomBarLayout
+        android:id="@+id/bottom_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/tab_bar_bg">
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/tab_home_normal"
+            app:iconSelected="@drawable/tab_home_selected"
+            app:itemText="首页"
+            app:textColorNormal="@color/tab_text_normal"
+            app:textColorSelected="@color/tab_text_selected"
+            app:itemTextSize="8sp"
+            app:itemMarginTop="-5dp"/>
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/tab_video_normal"
+            app:iconSelected="@drawable/tab_video_selected"
+            app:itemText="视频"
+            app:textColorNormal="@color/tab_text_normal"
+            app:textColorSelected="@color/tab_text_selected"
+            app:itemTextSize="8sp"
+            app:itemMarginTop="-5dp"/>
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/tab_micro_normal"
+            app:iconSelected="@drawable/tab_micro_selected"
+            app:itemText="微头条"
+            app:textColorNormal="@color/tab_text_normal"
+            app:textColorSelected="@color/tab_text_selected"
+            app:itemTextSize="8sp"
+            app:itemMarginTop="-5dp"/>
+
+        <com.chaychan.library.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconNormal="@drawable/tab_me_normal"
+            app:iconSelected="@drawable/tab_me_selected"
+            app:itemText="我的"
+            app:textColorNormal="@color/tab_text_normal"
+            app:textColorSelected="@color/tab_text_selected"
+            app:itemTextSize="8sp"
+            app:itemMarginTop="-5dp"/>
+
+    </com.chaychan.library.BottomBarLayout>
+
+</LinearLayout>

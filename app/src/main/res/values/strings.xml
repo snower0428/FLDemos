@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FLDemos</string>
+
+    <string name="replace_fragment">Replace Fragment</string>
+    <string name="add_fragment">Add Fragment</string>
+    <string name="remove_fragment">Remove Fragment</string>
+    <string name="download">Donwload</string>
+</resources>
